@@ -34,10 +34,10 @@ def get_filters():
         try:
             month = input('what month would you like to filter by? please enter month in full. otherwise enter "all": ').lower()
             if month in months:
-                print("Good")
+                print("Perfect")
                 break
         except KeyError:
-            print('\nwrong month value. try again\n')
+            print('\nwrong month value. try again please\n')
             True
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     while True:
@@ -47,7 +47,7 @@ def get_filters():
                 print("Data will be presented in few seconds..." )
                 break
         except KeyError:
-                print('That\'s not a valid day. Try again')
+                print('That\'s not a valid day. Try again please')
                 True
     print('-'*40)
     return city, month, day
